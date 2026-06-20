@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chrono-Jardin Stellaire</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero-panel">
+      <div>
+        <p class="eyebrow">Jeu hors ligne • Canvas • original</p>
+        <h1>Chrono-Jardin Stellaire</h1>
+        <p class="lede">Pilote une graine-orbite dans un jardin cosmique vivant. Récolte la rosée temporelle, sème des constellations et évite les comètes parasites avant l'aube quantique.</p>
+      </div>
+      <div class="controls-card">
+        <h2>Contrôles</h2>
+        <p><kbd>WASD</kbd> ou <kbd>↑↓←→</kbd> déplacer</p>
+        <p><kbd>Espace</kbd> impulsion de floraison</p>
+        <p><kbd>P</kbd> pause • <kbd>R</kbd> recommencer</p>
+      </div>
+    </section>
+
+    <section class="game-card">
+      <canvas id="game" width="1280" height="720" aria-label="Chrono-Jardin Stellaire"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="modal">
+          <p class="eyebrow">Mission</p>
+          <h2>Réveille 7 fleurs-constellations</h2>
+          <p>Collecte les gouttes bleues pour charger ton noyau. Appuie sur Espace près des bourgeons dorés pour les faire éclore. Chaque fleur active ralentit le temps, mais attire des parasites plus rusés.</p>
+          <button id="startBtn">Entrer dans le jardin</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
